@@ -5,8 +5,8 @@ html, body {
     flex-direction: column;
 }
 
-header .bg-custom {
-
+.border-radi {
+    border-radius: 10px;
 }
 
 body {

@@ -35,6 +35,7 @@ h1 {
 }
 
 nav {
+    color: aliceblue;
     background-color: #36313c;
     padding: 10px;
     margin: 0 40px;
@@ -62,6 +63,9 @@ nav a {
     border-radius: 5px;
     text-align: center;
     margin-right: 10px;
+}
+.border-radi {
+    border-radius: 10px;
 }
 
 nav a:hover {

@@ -11,7 +11,7 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/habilidades")
+    @GetMapping("/habilidad")
     public String mostrarHabilidades() {
         return "habilidad";
     }

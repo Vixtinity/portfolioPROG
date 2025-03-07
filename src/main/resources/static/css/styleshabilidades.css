@@ -24,8 +24,6 @@ h1 {
     background-color: #36313c;
     color: white;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 80px;
 }
 
@@ -157,10 +155,29 @@ footer a {
     display: inline-block;
 }
 @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
     h1 {
         font-size: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 20px;
     }
 
     header {
@@ -205,54 +222,6 @@ footer a {
     footer {
         font-size: 12px;
     }
-}
-
-
-@media screen and (max-width: 768px) {
-    h1 {
-        padding: 20px;
-    }
-    #menu {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 250px;
-        height: auto;
-        background-color: #36313c;
-        flex-direction: column;
-        justify-content: flex-start;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        padding: 10px;
-        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
-    }
-
-    #menu.open {
-        display: flex;
-    }
-
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 12px 12px;
-        display: block;
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-        border-radius: 5px;
-    }
-
-    nav a:hover {
-        background-color: #6f5f6f;
-        color: white;
-    }
-
-    
     .hamburguesa {
         display: block;
         font-size: 30px;
@@ -263,32 +232,6 @@ footer a {
         position: absolute;
         top: 20px;
         left: 20px;
-    }
-
-    
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        width: 100%;
-    }
-
-    #logohtml, #logocss, #logojava, #logomysql {
-        width: 100px;
-        height: auto;
-        margin: 10px;
-    }
-
-    #idiomas table {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    footer {
-        font-size: 10px;
-    }
-    body {
-        overflow-x: hidden;
     }
 }
 

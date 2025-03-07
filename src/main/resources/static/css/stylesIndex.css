@@ -5,17 +5,74 @@ html, body {
     flex-direction: column;
 }
 
-.border-radi {
-    border-radius: 10px;
-}
 
 body {
-    overflow-x: hidden;
-    min-height: 100vh;
     background-color: #262227;
     background-image: url(../imagenes/fondo.jpg);
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     transition: opacity 1.5s ease;
+}
+/* Estilos para el botón de la hamburguesa */
+.hamburguesa {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Cuando el menú está desplegado, cambia el color del fondo */
+.collapse.show {
+    display: block;
+    background-color: #f8f9fa; /* Fondo claro para el menú desplegado */
+}
+
+/* Estilos para el menú desplegable en móviles */
+.collapse {
+    display: none;
+}
+
+/* Estilo del contenedor del menú desplegable */
+.bg-body-tertiary {
+    background-color: #343a40; /* Fondo oscuro para el menú móvil */
+    border-radius: 8px;
+}
+
+/* Estilo de los enlaces en el menú móvil */
+.bg-body-tertiary a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.bg-body-tertiary a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos para que los elementos de lista se comporten como bloques */
+.bg-body-tertiary li {
+    list-style: none;
+    margin: 0;
+}
+
+/* Opcional: Para darle más espacio entre los enlaces */
+.bg-body-tertiary a:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Ajustes de tamaño para el icono de hamburguesa en dispositivos móviles */
+.navbar-toggler {
+    background: transparent;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
 }
 
 h1 {
@@ -27,9 +84,6 @@ h1 {
     font-size: 80px;
     
 }
-header {
-    grid-area: header;
-}
 
 main {
     display: flex;
@@ -37,59 +91,16 @@ main {
     align-items: center;
     padding: 20px;
 }
-
-nav {
-    color: azure;
-    background-color: #36313c;
-    padding: 10px;
-    margin: 0 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 96%;
-    z-index: 100;
+body {
+    background-color: #262227;
+    background-image: url(../imagenes/fondo.jpg);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1.5s ease;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
 
-nav a:hover {
-    color: rgb(0, 0, 0) !important;
-    background-color: white !important;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
 #botondescargarcurriculum .bg-custom{
     background-color: #6f5f6f;
 }
@@ -163,17 +174,7 @@ section {
     height: auto;
     margin-bottom: 0;
 }
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
+
 #volverarriba {
     display:none;
     flex-direction: column;
@@ -221,9 +222,6 @@ section {
 }
 
 
-
-
-
 footer {
     background-color: #36313c;
     margin-top: 10px;
@@ -256,14 +254,65 @@ a {
     color: white;
 }
 
+.hamburguesa {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 
+#menu {
+    background-color:  #36313c;
+    padding: 10px;
+    margin: 0 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
 #volver-arriba {
     text-align: center;
 }
-
 @media screen and (max-width: 480px) {
-    body{
-        padding:0;
+
+    nav a:hover {
+        background-color: #6f5f6f;
+        color: white;
     }
 }
 @media screen and (max-width: 768px) {
@@ -347,35 +396,5 @@ a {
         position: absolute;
         top: 20px;
         left: 20px;
-    }
-
-    #menu {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 250px;
-        background-color: #36313c;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 5px;
-        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
-    }
-
-    #menu.open {
-        display: flex;
-    }
-
-    nav a {
-        color: white;
-        padding: 12px 12px;
-        text-align: left;
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    nav a:hover {
-        background-color: #6f5f6f;
     }
 }

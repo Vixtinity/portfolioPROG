@@ -70,25 +70,22 @@ nav a {
 }
 
 nav a:hover {
-    background-color: white;
-    color: black !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
     transition: all 0.3s ease-in-out;
-    transform: scale(1.2);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
 }
-
+#botondescargarcurriculum .bg-custom{
+    background-color: #6f5f6f;
+}
 #botondescargarcurriculum {
     background-color: #6f5f6f;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    text-align: center;
 }
 
 #botondescargarcurriculum:hover {
@@ -103,11 +100,6 @@ nav a:hover {
     align-items: flex-start;
     padding: 20px;
     width: 100%;
-}
-
-#empresas h3 {
-    text-align: left;
-    margin-left: 0;
 }
 
 #prysboton {

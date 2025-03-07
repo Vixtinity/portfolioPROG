@@ -5,30 +5,14 @@ html, body {
     flex-direction: column;
 }
 
-.border-radi {
-    border-radius: 10px;
-}
 
 body {
-    overflow-x: hidden;
-    min-height: 100vh;
     background-color: #262227;
     background-image: url(../imagenes/fondo.jpg);
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     transition: opacity 1.5s ease;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    background-color: #36313c;
-    margin: 0%;
-    padding-top: 10px;
-    font-size: 80px;
-    
-}
-header {
-    grid-area: header;
 }
 
 main {
@@ -37,59 +21,16 @@ main {
     align-items: center;
     padding: 20px;
 }
-
-nav {
-    color: azure;
-    background-color: #36313c;
-    padding: 10px;
-    margin: 0 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 96%;
-    z-index: 100;
+body {
+    background-color: #262227;
+    background-image: url(../imagenes/fondo.jpg);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1.5s ease;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
 
-nav a:hover {
-    color: rgb(0, 0, 0) !important;
-    background-color: white !important;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
 #botondescargarcurriculum .bg-custom{
     background-color: #6f5f6f;
 }
@@ -163,17 +104,7 @@ section {
     height: auto;
     margin-bottom: 0;
 }
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
+
 #volverarriba {
     display:none;
     flex-direction: column;
@@ -220,50 +151,15 @@ section {
     max-height: 200px;
 }
 
-
-
-
-
-footer {
-    background-color: #36313c;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-footer a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-
-footer img[id="flechaarriba"],
-footer img[id="Linkedin"],
-footer img[id="Twitter"],
-footer img[id="Infojobs"],
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-a {
-    color: white;
-}
-
-
-#volver-arriba {
-    text-align: center;
-}
-
 @media screen and (max-width: 480px) {
-    body{
-        padding:0;
+
+    nav a:hover {
+        background-color: #6f5f6f;
+        color: white;
+    }
+    h1 {
+        font-size: 1000px;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -274,7 +170,8 @@ a {
     }
 
     h1 {
-        font-size: 50px;
+        size: 200PX;
+        font-size: 100px;
         padding: 20px;
     }
 
@@ -347,35 +244,5 @@ a {
         position: absolute;
         top: 20px;
         left: 20px;
-    }
-
-    #menu {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 250px;
-        background-color: #36313c;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 5px;
-        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
-    }
-
-    #menu.open {
-        display: flex;
-    }
-
-    nav a {
-        color: white;
-        padding: 12px 12px;
-        text-align: left;
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    nav a:hover {
-        background-color: #6f5f6f;
     }
 }

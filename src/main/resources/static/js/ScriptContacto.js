@@ -1,11 +1,5 @@
-// Obtener el botón hamburguesa y el menú
-const hamburguesa = document.getElementById('hamburguesa');
-const menu = document.getElementById('menu');
-
-// Agregar el evento de clic al botón hamburguesa
-hamburguesa.addEventListener('click', () => {
-    // Alternar la clase 'open' en el menú
-    menu.classList.toggle('open');
+document.getElementById('hamburguesa').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('open');
 });
 
 //Volver arriba pero de manera fluida

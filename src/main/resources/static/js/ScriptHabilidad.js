@@ -1,6 +1,3 @@
-document.querySelector('.hamburguesa').addEventListener('click', function() {
-    document.getElementById('menu').classList.toggle('open');
-});
 // Volver arriba pero de manera fluida
 const botonArriba = document.querySelector('footer a[href="#"]');
 if (botonArriba) {

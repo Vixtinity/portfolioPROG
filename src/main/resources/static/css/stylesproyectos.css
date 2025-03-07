@@ -93,7 +93,6 @@ h1 {
     opacity: 1;
     left: 0;
 }
-/*-------------------------------------------*/
 
 .proyecto {
     background-color: #3d2b4b;
@@ -151,26 +150,6 @@ h1 {
     font-size: 60px;
 }
 
-footer {
-    background-color: #473c4f;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    padding-top: 50px;
-}
-
-footer img[id="flechaarriba"],
-footer img[id="Linkedin"],
-footer img[id="Twitter"],
-footer img[id="Infojobs"] {
-    width: 30px;
-    height: auto;
-}
-
-#volver-arriba {
-    text-align: center;
-}
 
 .contenedor-proyectos {
     width: 80%;
@@ -237,44 +216,7 @@ footer img[id="Infojobs"] {
     font-size: 60px;
 }
 
-footer {
-    background-color: #473c4f;
-    padding: 5px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    padding-top: 50px;
-    padding:0;
-    padding: 30px;
-}
-
 @media screen and (max-width: 768px) {
-
-    body{
-        overflow-x: hidden;
-    }
-    h1 {
-        font-size: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    nav {
-        padding: 10px;
-        margin: 0 20px;
-        width: 90%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 5px 0;
-        padding: 10px 20px;
-    }
-
     .contenedor-proyectos {
         width: 74%;
         flex-direction: column;
@@ -291,116 +233,5 @@ footer {
         height: auto;
     }
 
-    .carrusel-imagenes {
-        height: 300px;
-    }
-
-    .imagen-carrusel {
-        height: 300px;
-    }
-
-    footer {
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    footer img {
-        width: 25px;
-    }
-
-    .boton-proyecto {
-        padding: 8px 15px;
-    }
-
-    .titulo-proyecto {
-        font-size: 20px;
-    }
 }
 
-@media screen and (max-width: 480px) {
-    body{
-        padding:0;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    #menu {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 250px;
-        height: auto;
-        background-color: #473c4f;
-        flex-direction: column;
-        justify-content: flex-start;
-        z-index: 100;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        padding: 10px;
-        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
-    }
-
-    #menu.open {
-        display: flex;
-    }
-
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 12px 12px;
-        display: block;
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-        border-radius: 5px;
-    }
-    h1 {
-        padding:26px;
-    }
-    nav a:hover {
-        background-color: #6f5f6f;
-        color: white;
-    }
-
-    
-    .hamburguesa {
-        display: block;
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-
-    
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        width: 100%;
-    }
-
-
-    .proyecto {
-        width: 100%;
-    }
-
-    .imagen-proyecto {
-        width: 100%;
-        height: auto;
-    }
-
-    footer img {
-        width: 20px;
-    }
-    
-}

@@ -1,0 +1,31 @@
+<main th:fragment="mainC" class="container my-5">
+    <section class="row justify-content-center">
+        <div id="formulario-contacto" class="col-md-6 p-4 bg-dark text-white rounded">
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Introduce tu nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required placeholder="Introduce tu email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" required placeholder="Introduce tu teléfono">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" id="botonenviar" class="btn btn-primary w-100">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,381 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.border-radi {
+    border-radius: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #262227;
+    background-image: url(../imagenes/fondo.jpg);
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #36313c;
+    margin: 0%;
+    padding-top: 10px;
+    font-size: 80px;
+    
+}
+header {
+    grid-area: header;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    color: azure;
+    background-color: #36313c;
+    padding: 10px;
+    margin: 0 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 96%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.hamburguesa {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+#botondescargarcurriculum .bg-custom{
+    background-color: #6f5f6f;
+}
+#botondescargarcurriculum {
+    background-color: #6f5f6f;
+    color: white;
+}
+
+#botondescargarcurriculum:hover {
+    background-color: #2e2b33;
+    color: white;
+    transform: scale(1.2);
+}
+
+#empresas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+#prysboton {
+    background-color: #6f5f6f;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+#prysboton:hover {
+    background-color: #2e2b33;
+    color: white;
+    transform: scale(1.3);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: row-reverse;
+}
+
+#descripcion {
+    display: block;
+    max-width: 600px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#asideimagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#asideimagen img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0;
+}
+.hamburguesa {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#volverarriba {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#volverarriba a {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#volverarriba p {
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#volverarriba img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#volverarriba img:hover {
+    transform: scale(1.1);
+}
+
+
+#mapa-container {
+    background-color: black ;
+    max-height: 0;
+    overflow: hidden;
+    width: fit-content;
+    display: block;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+#prysboton:hover + #mapa-container {
+    max-height: 200px;
+}
+
+
+
+
+
+footer {
+    background-color: #36313c;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+
+footer img[id="flechaarriba"],
+footer img[id="Linkedin"],
+footer img[id="Twitter"],
+footer img[id="Infojobs"],
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+a {
+    color: white;
+}
+
+
+#volver-arriba {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        padding:0;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../imagenes/fondo.jpg);
+        background-size: cover;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #descripcion {
+        font-size: 18px;
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    #botondescargarcurriculum, #prysboton {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    #volverarriba {
+        display: flex;
+    }
+
+    #volverarriba a {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #volverarriba p {
+        font-size: 16px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #volverarriba img {
+        width: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    #volverarriba img:hover {
+        transform: scale(1.1);
+    }
+
+
+    .hamburguesa {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 250px;
+        background-color: #36313c;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    #menu.open {
+        display: flex;
+    }
+
+    nav a {
+        color: white;
+        padding: 12px 12px;
+        text-align: left;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    nav a:hover {
+        background-color: #6f5f6f;
+    }
+}

@@ -1,6 +1,6 @@
 package com.ismaelportfolio.portfolio.model;
 
-public class Usuario {
+public class Index {
     private String nombre;
     private int edad;
     private String descripcion;
@@ -8,7 +8,7 @@ public class Usuario {
     private String empresa;
     private String urlEmpresa;
 
-    public Usuario() {
+    public Index() {
     }
 
     public String getNombre() {

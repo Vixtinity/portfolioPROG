@@ -15,16 +15,6 @@ body {
     transition: opacity 1.5s ease;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    background-color: #36313c;
-    margin: 0%;
-    padding-top: 10px;
-    font-size: 80px;
-    
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -161,98 +151,15 @@ section {
     max-height: 200px;
 }
 
-
-footer {
-    background-color: #36313c;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-footer a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-
-footer img[id="flechaarriba"],
-footer img[id="Linkedin"],
-footer img[id="Twitter"],
-footer img[id="Infojobs"],
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-a {
-    color: white;
-}
-
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-#menu {
-    background-color:  #36313c;
-    padding: 10px;
-    margin: 0 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
-
-nav a:hover {
-    color: rgb(0, 0, 0) !important;
-    background-color: white !important;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
-#volver-arriba {
-    text-align: center;
-}
 @media screen and (max-width: 480px) {
 
     nav a:hover {
         background-color: #6f5f6f;
         color: white;
+    }
+    h1 {
+        font-size: 1000px;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -263,7 +170,8 @@ nav a:hover {
     }
 
     h1 {
-        font-size: 50px;
+        size: 200PX;
+        font-size: 100px;
         padding: 20px;
     }
 

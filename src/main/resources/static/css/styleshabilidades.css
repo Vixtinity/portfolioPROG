@@ -19,78 +19,17 @@ body {
     transition: opacity 1.5s ease;
 }
 
-
-h1 {
-    background-color: #36313c;
-    color: white;
-    margin: 0;
-    font-size: 80px;
-}
-nav {
-    color: aliceblue;
-    background-color: #36313c;
-    padding: 10px;
-    margin: 0 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 96%;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
-
-nav a:hover {
-    color: rgb(0, 0, 0) !important;
-    background-color: white !important;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 10px;
-}
-.border-radi {
-    border-radius: 10px;
-}
-
-nav a:hover {
-    background-color: white;
-    color: #000000;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-
 #tle {
     color:white;
 }
 #logohtml {
-    width: 150px;
+    width: 180px;
     height: auto;
-    margin-right: 150px;
+    margin-right: 20px;
 }
 
 #logocss {
-    width: 250px;
+    width: 280px;
     height: auto;
     margin-left: 20px;
 }
@@ -128,31 +67,7 @@ nav a:hover {
 #idiomas tr:hover {
     background-color: #6f5f6f;
 }
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-footer {
-    grid-area: footer;
-    background-color: #473c4f;
-}
 
-footer img {
-    width: 30px;
-    height: auto;
-}
-
-footer a {
-    margin: 0 10px;
-    display: inline-block;
-}
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;

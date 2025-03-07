@@ -14,66 +14,6 @@ body {
     opacity: 1;
     transition: opacity 1.5s ease;
 }
-/* Estilos para el botón de la hamburguesa */
-.hamburguesa {
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-/* Cuando el menú está desplegado, cambia el color del fondo */
-.collapse.show {
-    display: block;
-    background-color: #f8f9fa; /* Fondo claro para el menú desplegado */
-}
-
-/* Estilos para el menú desplegable en móviles */
-.collapse {
-    display: none;
-}
-
-/* Estilo del contenedor del menú desplegable */
-.bg-body-tertiary {
-    background-color: #343a40; /* Fondo oscuro para el menú móvil */
-    border-radius: 8px;
-}
-
-/* Estilo de los enlaces en el menú móvil */
-.bg-body-tertiary a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 12px;
-    display: block;
-    transition: 0.3s ease;
-}
-
-/* Efecto hover para los enlaces */
-.bg-body-tertiary a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-/* Estilos para que los elementos de lista se comporten como bloques */
-.bg-body-tertiary li {
-    list-style: none;
-    margin: 0;
-}
-
-/* Opcional: Para darle más espacio entre los enlaces */
-.bg-body-tertiary a:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-}
-
-/* Ajustes de tamaño para el icono de hamburguesa en dispositivos móviles */
-.navbar-toggler {
-    background: transparent;
-    border: none;
-}
-
-.navbar-toggler:focus {
-    outline: none;
-}
 
 h1 {
     color: white;

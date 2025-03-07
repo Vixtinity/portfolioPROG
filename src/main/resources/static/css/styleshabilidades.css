@@ -19,11 +19,6 @@ body {
     transition: opacity 1.5s ease;
 }
 
-header {
-    grid-area: header;
-    text-align: center;
-    box-sizing: border-box;
-}
 
 h1 {
     background-color: #36313c;
@@ -87,35 +82,7 @@ nav a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
 
-#aprendidas, #en-aprendizaje, #idiomas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-
-    border-radius: 10px;
-}
-
-#aprendidas h2, #en-aprendizaje h2, #idiomas h2 {
-    color: aliceblue;
-    margin-bottom: 20px;
-}
-
-
-#aprendidas, #en-aprendizaje {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 20px;
-}
 #tle {
     color:white;
 }
@@ -178,9 +145,6 @@ main {
 footer {
     grid-area: footer;
     background-color: #473c4f;
-    padding: 10px;
-    text-align: center;
-    color: white;
 }
 
 footer img {

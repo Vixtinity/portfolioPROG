@@ -3,211 +3,274 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-    min-height: 100vh;
-    background-color: #262227;
+}
+
+body {
+    background-color: #36313c;
+    display: flex;
+    flex-direction: column;
     background-image: url(../imagenes/fondo.jpg);
+    color: white;
     opacity: 1;
     transition: opacity 1.5s ease;
 }
 
-.border-radi {
-    border-radius: 10px;
-}
-
-h1 {
-    color: white;
+#volver-arriba {
     text-align: center;
-    background-color: #36313c;
-    margin: 0;
-    padding-top: 10px;
-    font-size: 80px;
 }
 
-nav {
-    background-color: #36313c;
+.hamburguesa {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#menu {
+    background-color:  #36313c;
     padding: 10px;
     margin: 0 40px;
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 96%;
-    z-index: 100;
     display: flex;
     justify-content: center;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    display: block;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
+    text-align: center;
     margin-right: 10px;
 }
 
 nav a:hover {
-    color: black !important;
+    color: rgb(0, 0, 0) !important;
     background-color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
 }
+        
 
-#botondescargarcurriculum {
-    background-color: #6f5f6f;
+h1 {
     color: white;
+    text-align: center;
+    background-color: #36313c;
+    margin: 0%;
+    padding-top: 10px;
+    font-size: 80px;
+    
 }
 
-#botondescargarcurriculum:hover {
+#formulario-contacto {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
     background-color: #2e2b33;
-    transform: scale(1.2);
+    padding: 80px;
+    border-radius: 10px;
 }
 
-#empresas {
-    align-items: flex-start;
-    padding: 20px;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     width: 100%;
 }
 
-#prysboton {
-    background-color: #6f5f6f;
+button {
+    background-color: #262227;
     color: white;
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
     border: none;
-    transition: 0.3s ease-in-out;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-#prysboton:hover {
-    background-color: #2e2b33;
-    transform: scale(1.3);
-}
-
-section {
-    text-align: center;
+button:hover {
+    background-color: #473c4f;
     color: white;
-    flex-direction: row-reverse;
-}
-
-#descripcion {
-    max-width: 600px;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px;
-    margin-left: 20px;
-}
-
-#asideimagen img {
-    max-width: 80%;
-    height: auto;
-}
-
-#volverarriba {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-#volverarriba img {
-    width: 30px;
-    transition: transform 0.3s ease;
-}
-
-#volverarriba img:hover {
-    transform: scale(1.1);
-}
-
-#mapa-container {
-    background-color: black;
-    max-height: 0;
-    overflow: hidden;
-    margin-top: 10px;
-    transition: max-height 0.3s ease-in-out;
-}
-
-#prysboton:hover + #mapa-container {
-    max-height: 200px;
 }
 
 footer {
-    background-color: #36313c;
-    margin-top: 10px;
-    padding: 20px;
+    grid-area: footer;
+    background-color: #473c4f;
+    padding: 10px;
     text-align: center;
     color: white;
 }
 
 footer img {
     width: 30px;
+    height: auto;
 }
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 50px;
-        padding: 20px;
-    }
+footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
 
+footer img[id="flechaarriba"],
+footer img[id="Linkedin"],
+footer img[id="Twitter"],
+footer img[id="Infojobs"],
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+a {
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
     nav {
-        margin: 0 20px;
+        flex-direction: column;
+        align-items: center;
         width: 90%;
+        margin: 0 auto;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #descripcion {
-        font-size: 18px;
-        padding: 15px;
-        margin-left: 0;
-    }
-
-    #botondescargarcurriculum, #prysboton {
         width: 100%;
-        padding: 15px;
-        font-size: 16px;
     }
 
-    footer {
-        font-size: 12px;
-        padding: 0;
+    nav a {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
     }
 
-    footer img {
-        width: 20px;
+    h1 {
+        font-size: 50px;
+        padding: 20px;
     }
 
-    #volverarriba {
-        display: flex;
+    #formulario-contacto {
+        width: 60%;
+        padding: 30px;
     }
 
-    .hamburguesa {
-        display: block;
-        font-size: 30px;
-        color: white;
-        position: absolute;
-        top: 20px;
-        left: 20px;
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
     }
 
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
     #menu {
         display: none;
         position: absolute;
         top: 100px;
         left: 0;
         width: 250px;
-        background-color: #36313c;
+        height: auto;
+        background-color: #473c4f;
         flex-direction: column;
-        padding: 10px;
+        justify-content: flex-start;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
+        padding: 10px;
+        transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     #menu.open {
         display: flex;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 12px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #6f5f6f;
+        color: white;
+    }
+
+
+    .hamburguesa {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    #formulario-contacto {
+        padding: 30px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    footer {
+        width: 94%;
     }
 }

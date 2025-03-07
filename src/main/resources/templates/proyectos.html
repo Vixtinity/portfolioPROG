@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link href="/css/stylesproyectos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <header>
+            <div th:replace="~{components/global/header :: header(titulo='Proyectos')}"></div>
+        </header>
+
+        <main>
+        <div th:replace="~{components/proyecto/mainP :: mainP}"></div>
+        </main>
+        
+        <footer>
+        <div th:replace="~{components/global/footer :: footer}"></div>
+        </footer>
+
+    <script src="javascript/ScriptProyectos.js"></script>
+</body>
+</html>

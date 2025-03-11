@@ -1,0 +1,21 @@
+<main class="py-5">
+    <section>
+        <aside id="asideimagen" class="col-md-6 text-center">
+            <img src="imagenes/fotomia.png" alt="Foto propia" loading="lazy" class="img-fluid rounded-circle">
+        </aside>
+        <article id="descripcion" class="col-md-6">
+            <h2><strong th:text="${usuario.nombre}"></strong></h2>
+            <p th:text="${usuario.descripcion}"></p>
+            <a th:href="@{${usuario.curriculum}}" download="curriculum" id="botondescargarcurriculum" class="btn btn-secondary bg-custom">
+                Descargar currículum
+            </a>
+        </article>
+    </section>
+
+    <section id="empresas" class="mt-5">
+        <h3 class="text-white">Trabajé en:</h3>
+        <button id="prysboton" class="btn btn-dark" th:attr="onclick='window.open(\'' + ${usuario.urlEmpresa} + '\', \'_blank\')'">
+            <span th:text="${usuario.empresa}"></span>
+        </button>
+    </section>
+</main>

@@ -1,28 +1,4 @@
 /*=========================================*/
-/*FOOTER*/
-footer {
-    background-color: #473c4f;
-    padding: 0px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    padding-top: 50px;
-}
-
-footer img[id="flechaarriba"],
-footer img[id="Infojobs"],
-footer img[id="Twitter"],
-footer img[id="Linkedin"]
-{
-    width: 30px;
-    height: auto;
-}
-#volver-arriba {
-    text-align: center;
-}
-/*=========================================*/
-
-/*=========================================*/
 /*HEADER*/
 h1 {
     background-color: #36313c;

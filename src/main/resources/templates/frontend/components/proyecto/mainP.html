@@ -1,0 +1,35 @@
+<main th:fragment="mainP">
+    <section class="contenedor-proyectos d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+
+        <article class="proyecto card mb-4 shadow-sm" style="max-width: 600px;">
+            <div th:if="${#lists.isEmpty(proyecto1.imagenes)}" class="card-body">
+                <img th:src="@{${proyecto1.imagenes[0]}}" alt="Imagen de proyecto" class="card-img-top" />
+            </div>
+
+            <div th:if="${proyecto1.imagenes.size() > 1}" class="carrusel-imagenes carousel slide" id="carrusel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <th:block th:each="imagen, iterStat : ${proyecto1.imagenes}">
+                        <div class="carousel-item" th:classappend="${iterStat.index == 0 ? 'active' : ''}">
+                            <img th:src="@{${imagen}}" class="d-block w-100" alt="Imagen de proyecto" />
+                        </div>
+                    </th:block>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <div class="card-body">
+                <h2 class="titulo-proyecto card-title" th:text="${proyecto1.nombre}"></h2>
+                <p class="descripcion-proyecto card-text" th:text="${proyecto1.descripcion}"></p>
+                <a th:href="@{${proyecto1.url}}" class="btn btn-primary" title="Ir al proyecto">Ir al proyecto</a>
+            </div>
+        </article>
+        
+    </section>
+</main>

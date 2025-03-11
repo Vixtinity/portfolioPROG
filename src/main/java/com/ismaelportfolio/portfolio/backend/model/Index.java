@@ -1,4 +1,7 @@
-package com.ismaelportfolio.portfolio.model;
+package com.ismaelportfolio.portfolio.backend.model;
+
+import java.time.LocalTime;
+import java.time.Year;
 
 public class Index {
     private String nombre;
@@ -8,54 +11,36 @@ public class Index {
     private String empresa;
     private String urlEmpresa;
 
-    public Index() {
+    public Index(String nombre, int edad, String descripcion, String curriculum, String empresa, String urlEmpresa, int añoInicio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.descripcion = descripcion;
+        this.curriculum = curriculum;
+        this.empresa = empresa;
+        this.urlEmpresa = urlEmpresa.startsWith("http") ? urlEmpresa : "https://" + urlEmpresa;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public int getEdad() {
         return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public String getCurriculum() {
         return curriculum;
-    }
-
-    public void setCurriculum(String curriculum) {
-        this.curriculum = curriculum;
     }
 
     public String getEmpresa() {
         return empresa;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
-    }
-
     public String getUrlEmpresa() {
         return urlEmpresa;
-    }
-
-    public void setUrlEmpresa(String urlEmpresa) {
-        this.urlEmpresa = urlEmpresa;
     }
 }

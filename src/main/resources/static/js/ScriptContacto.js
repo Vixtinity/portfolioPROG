@@ -2,15 +2,6 @@ document.getElementById('hamburguesa').addEventListener('click', function() {
     document.getElementById('menu').classList.toggle('open');
 });
 
-//Volver arriba pero de manera fluida
-const botonArriba = document.querySelector('footer a[href="#"]');
-if (botonArriba) {
-    botonArriba.addEventListener("click", (event) => {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-}
-
 // Agregar un evento a cada enlace
 const menuLinks = document.querySelectorAll('#menu a');
 menuLinks.forEach(link => {

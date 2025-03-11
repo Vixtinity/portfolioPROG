@@ -231,18 +231,5 @@ section {
 
     #volverarriba img:hover {
         transform: scale(1.1);
-    }
-
-
-    .hamburguesa {
-        display: block;
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
+    }   
 }
